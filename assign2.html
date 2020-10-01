@@ -1,0 +1,57 @@
+<html>
+
+    <head>
+        
+        <link href="game.css" rel="stylesheet" type="text/css"/>
+        <script src="game.js"></script>
+        
+        <script language="JavaScript">
+            var name;
+            name = window.prompt("Please enter your name");
+            document.write("<h1>" + name + ", welcome to Rock Paper Scissors!</h1>");
+        </script>
+        
+        <title> ROCK. PAPER. SCISSORS. </title>
+    
+    </head>
+    
+    <body>
+    
+        <table style="width:100%">
+            <tr>
+                <th>Your selection:</th>
+                <th></th>
+                <th>Computer</th>
+            </tr>
+            
+            <tr>
+                <th><input type="radio" id="rockBtn" name="gender" value="female" onclick="rockToSelect()"><label for="rockBtn">Rock</label><br>
+                    <input type="radio" id="paperBtn" name="gender" value="female" onclick="paperToSelect()"><label for="paperBtn">Paper</label><br>
+                    <input type="radio" id="scissorsBtn" name="gender" value="female" onclick="scissorsToSelect()"><label for="scissorsBtn">Scissors</label>
+                </th>
+                <th>
+                    <input type="button" value="Go!" onclick="checkIfSelect()">
+                </th>
+                <th id="cpuChoice"></th>
+            </tr>
+            
+            <tr>
+                <th>You selected:</th>
+                <th colspan="2" id="userSelection"></th>
+            </tr>
+            
+            <tr>
+                <th>Computer randomly generated:</th>
+                <th colspan="2" id="cpuSelection"></th>
+            </tr>  
+        </table>
+        
+        <div class="playCountText">Total times played: [<p id="playCount"></p>]</div>
+        
+        <div class="rpsCountText">You've encountered: Rock [<p id="rockCt"></p>] time(s), Paper [<p id="paperCt"></p>] time(s), and Scissors [<p id="scissorsCt"></p>] time(s). </div>
+        
+        <div class="winLoseTie">You've won [<p id="winCount"></p>] time(s), lost [<p id="lossCount"></p>] time(s), and tied [<p id="tieCount"></p>] time(s).</div>
+    
+    </body>
+
+</html>

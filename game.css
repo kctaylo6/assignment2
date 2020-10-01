@@ -1,0 +1,25 @@
+body {
+    background-image: #fff);
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+
+th {
+    text-align: left;
+}
+
+.playCountText {
+    display: inline-block;
+}
+
+p {
+    display: inline;
+}
+
+.winLoseTie {
+    font-weight: bolder;
+    padding-top: 10px;
+    color: orange;
+}
